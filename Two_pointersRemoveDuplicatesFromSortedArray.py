@@ -50,3 +50,11 @@ def rem_dup(arr):
 
 arr = [1,1,2]
 print(rem_dup(arr))
+
+
+#For some reason i love this solution ...so i would add it here
+def remove_duplicates(arr):
+    return [x for i, x in enumerate(arr) if x not in arr[:i]]
+
+arr = [1,1,2]
+print(remove_duplicates(arr))  # Output: [1, 2]
